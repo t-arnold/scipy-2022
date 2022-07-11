@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-      - name: Run pipeline
+      - name: Unit Tests
         run: |
-          cd solutions/ex-5
+          cd material
           ploomber build --env--sample true
