@@ -91,6 +91,7 @@ cd material
 soorgeon refactor notebook.ipynb --df-format parquet --file-format py
 ```
 
+
 Open [material/pipeline.yaml](material/pipeline.yaml)
 
 ```sh
@@ -147,6 +148,7 @@ from ploomber.spec import DAGSpec
 dag = DAGSpec('material/pipeline.yaml').to_dag()
 dag.build(force=True)
 ```
+
 
 Most commands in the CLI have an equivalent method in the Python API:
 
